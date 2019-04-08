@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../public/css/tmp.css">
+    <script src="/public/js/fine.js"></script>
+    <title>ค้นหาใบเสร็จการซ่อม</title>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <img src="../../public/assets/logo.png" class="logo" alt="">
+        </div>
+    </header>
+    <ul>
+        <li><a href="./หน้าหลัก.html">หน้าหลัก</a></li>
+        <li><a href="./บันทึกลูกค้า.html">การซื้อรถ</a></li>
+        <li><a href="./บันทึกลูกค้า1.html">การขายรถ</a></li>
+        <li><a href="./บันทึกข้อมูลคู่ค้า.html">บันทึกคู่ค้าขายรถ</a></li>
+        <li><a class="active" href="./บันทึกลูกค้า2.html">การซ่อมรถ</a></li>
+        <li><a href="./การสต๊อก.html">การสต๊อกรถ</a></li>
+        <li><a href="./บันทึกลูกค้า3.html">การเดินทะเบียน</a></li>
+        <li><a href="./login.html">ออกจากระบบ</a></li>
+    </ul>
+
+    <!-- --------code---------- -->
+    <h3><u>ค้นหาใบเสร็จการซ่อม</u></h3>
+
+    <section class="main">
+        <section>
+            
+            <form action="./page-search" method="post">
+                <label class="label-partner">ค้นหารายการซ่อม</label><br>
+                <input name="search" type="text" style="width: 80vh;" placeholder="ชื่อลูกค้า">
+                <button type="submit"class="button3" style="margin-left: 1vw;">ค้นหา</button><br>
+            </form>
+            <br><br>
+                    <table>
+                        <tr>
+                            <th style="text-align: center;">ID</th>
+                            <th style="text-align: center;">ชื่อ</th>
+                            <th style="text-align: center;">ยื่ห้อรถ</th>
+                            <th style="text-align: center;">รุ่น</th>
+                            <th style="text-align: center;">สี</th>
+                            <th style="text-align: center;">หมายเหตุ</th>
+                        </tr>
+                      <!-- <% for(var i=0; i < repair.length; i++) { %> -->
+                        <tr>
+                            <td style="text-align: center;"></td> 
+                            <!-- <%= repair[i].ID_product %> -->
+                            <td style="text-align: center;"></td>
+                            <!-- <%= repair[i].amount %> -->
+                            <td style="text-align: center;"></td>
+                            <td style="text-align: center;"></td>
+                            <td style="text-align: center;"></td>
+                            <td style="text-align: center;"></td>
+                        </tr>
+                        
+                        <!-- <% } %>
+                        <% if(notFound){ %> -->
+                        <!-- <tr>
+                            <td colspan="6" style="text-align: center;">ไม่พบข้อมูล</td>
+                        </tr> -->
+                        <!-- <% } %> -->
+                        
+                    </table>
+            <div class="column" style="margin-left: 42%">
+                <button class="button2" onclick="location.href('./หน้าหลัก.html')">ย้อนกลับ</button>
+            </div>
+
+        </section>
+    </section>
+
+    <!-- footer -->
+
+    <div class="footer">
+        © 2019 Diamond Development
+    </div>
+</body>
+
+</html>
